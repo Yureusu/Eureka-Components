@@ -1,5 +1,4 @@
 import Theme from "./Theme"
-import Search from "./Search"
 
 type changeTheme = {
     isDark: boolean;
