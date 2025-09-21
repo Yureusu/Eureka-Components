@@ -23,7 +23,7 @@ const Dropdown: React.FC<DropdownProps> = ({isDark, items, label}) => {
 
     return (
         <div title="Dropdown" className={`${isDark? "text-[var(--placeholder-color)] bg-[var(--text-color)]" : "text-[var(--placeholder-color)] bg-[var(--bg-color)]"}
-            h-auto w-[calc(8.8vw+8.2rem)] relative flex flex-row items-center justify-between gap-[calc(0.6vw+0.4rem)] px-[calc(0.6vw+0.4rem)] py-[calc(0.4vw+0.2rem)] 
+            h-auto w-[calc(13.8vw+6.2rem)] relative flex flex-row items-center justify-between px-[calc(0.6vw+0.4rem)] py-[calc(0.4vw+0.2rem)] 
             border-2 border-[var(--border-color)] cursor-pointer m-[calc(0.6vw+0.4rem)]`}>
             <span className={`
                 text-[calc(0.6vw+0.3rem)] cursor-pointer`}>
@@ -33,8 +33,8 @@ const Dropdown: React.FC<DropdownProps> = ({isDark, items, label}) => {
                 onClick={handleItems}></i>
 
             {viewItems && <div title="Dropdown Items" className={`${isDark? "text-[var(--placeholder-color)] bg-[var(--text-color)]" : "text-[var(--placeholder-color)] bg-[var(--bg-color)]"}
-                absolute top-0 left-0 mt-[calc(1.6vw+1rem)] ml-[-2px]
-                h-auto w-[calc(8.8vw+8.2rem)] flex flex-col items-start justify-start border-2 border-[var(--border-color)]`}>
+                absolute top-0 left-0 mt-[calc(1.6vw+1rem)] ml-[-2px] 
+                h-auto w-[calc(13.8vw+6.2rem)] flex flex-col items-start justify-start border-2 border-[var(--border-color)]`}>
                 <ul className="h-auto w-full flex flex-col items-start justify-start">
                     {items.map((item, index) => (
                         <li

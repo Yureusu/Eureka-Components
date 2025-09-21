@@ -17,10 +17,10 @@ function Theme({isDark, setIsDark}: changeTheme) {
 
     return (
         <div title='Change Theme' className={`${isDark? "text-[var(--bg-color)] bg-[var(--text-color)]" : "text-[var(--text-color)] bg-[var(--bg-color)]"} 
-            flex flex-col items-center justify-center cursor-pointer rounded-full hover:bg-[var(--border-color)] hover:border-0 transition-colors ease-in-out`} onClick={handleTheme}>
+            flex flex-col items-center justify-center cursor-pointer rounded-full h-calc(0.6vw+0.4rem) w-calc(0.6vw+0.4rem) hover:bg-[var(--border-color)] hover:border-0 transition-colors ease-in-out`} onClick={handleTheme}>
             <div className={`flex flex-col items-center justify-center rounded-full p-[0.6vw+0.4rem]`}>
                 <i className={`${isDark? "fa-regular fa-moon text-[var(--bg-color)]" : "fa-solid fa-moon text-[var(--text-color)]"} 
-                    text-[calc(0.8vw+0.4rem)] hover:text-[var(--text-color)]`}></i>
+                    text-[calc(0.6vw+0.6rem)] hover:text-[var(--text-color)]`}></i>
             </div>
         </div>
     ) 

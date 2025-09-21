@@ -33,15 +33,15 @@ const Showcase: React.FC<ShowcaseInfo> = ({ image1, image2, description1, descri
     <div
       ref={scrollRef}
       className={`show-case ${isDark ? "bg-[var(--text-color)] text-[var(--bg-color)]" : "bg-[var(--bg-color)] text-[var(--text-color)]"}
-        h-screen w-full max-w-screen overflow-x-scroll flex items-center justify-start no-scrollbar`}
+        h-screen w-full max-w-screen overflow-x-scroll flex items-center justify-start no-scrollbar border-2 border-[var(--border-color)]`}
     >
       <div className="h-full w-full bg-transparent shrink-0 flex flex-col items-center justify-center gap-[calc(0.6vw+0.4rem)]">
         <img {...image1} />
-        <p className='text-center text-[calc(0.6vw+0.4rem)]'>{description1}</p>
+        <p className='text-center text-[calc(0.6vw+0.4rem)] w-[60%]'>{description1}</p>
       </div>
       <div className="h-full w-full bg-transparent shrink-0 flex flex-col items-center justify-center gap-[calc(0.6vw+0.4rem)]">
         <img {...image2} />
-        <p className='text-center text-[calc(0.6vw+0.4rem)]'>{description2}</p>
+        <p className='text-center text-[calc(0.6vw+0.4rem)] w-[60%]'>{description2}</p>
       </div>
     </div>
   );
