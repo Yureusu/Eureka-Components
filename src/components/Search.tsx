@@ -5,7 +5,7 @@ type changeTheme ={
 
 function Search({isDark}: changeTheme) {
     return (
-        <div title="Search" className={`bg-transparent p-[calc(0.6vw+0.4rem)]
+        <div title="Search" className={`bg-transparent p-[calc(0.6vw+0.4rem) ${isDark? "" : ""}]
             transition-colors ease-in-out`}>
             <div className="flex flex-row items-center justify-end">
                 <input type="text" placeholder='What are you looking for?'

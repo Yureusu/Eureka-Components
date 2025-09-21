@@ -24,7 +24,7 @@ const Dropdown: React.FC<DropdownProps> = ({isDark, items, label}) => {
     return (
         <div title="Dropdown" className={`${isDark? "text-[var(--placeholder-color)] bg-[var(--text-color)]" : "text-[var(--placeholder-color)] bg-[var(--bg-color)]"}
             h-auto w-[calc(8.8vw+8.2rem)] relative flex flex-row items-center justify-between gap-[calc(0.6vw+0.4rem)] px-[calc(0.6vw+0.4rem)] py-[calc(0.4vw+0.2rem)] 
-            border-2 border-[var(--border-color)] cursor-pointer`}>
+            border-2 border-[var(--border-color)] cursor-pointer m-[calc(0.6vw+0.4rem)]`}>
             <span className={`
                 text-[calc(0.6vw+0.3rem)] cursor-pointer`}>
                 {selectedItem || label}

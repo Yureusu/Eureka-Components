@@ -24,11 +24,11 @@ function Header({isDark, setIsDark}: changeTheme) {
                 <Search isDark={isDark}/>  
                 <Dropdown isDark={isDark} items={cats} label={"Meow"} />
             </div>
-            <div className="h-auto w-full flex flex-row items-center justify-center">
-                <ProfileCard name="Meow" image={Cat1} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut modi, autem iste minima recusandae tenetur expedita dolorum esse distinctio maiores debitis quia officia est quos alias aliquam, natus neque reiciendis?"/>
-                <ProfileCard name="Kitkat" image={Cat2} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut modi, autem iste minima recusandae tenetur expedita dolorum esse distinctio maiores debitis quia officia est quos alias aliquam, natus neque reiciendis?"/>
-                <ProfileCard name="Mallows" image={Cat3} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut modi, autem iste minima recusandae tenetur expedita dolorum esse distinctio maiores debitis quia officia est quos alias aliquam, natus neque reiciendis?"/>
-                <ProfileCard name="Peanut" image={Cat4} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut modi, autem iste minima recusandae tenetur expedita dolorum esse distinctio maiores debitis quia officia est quos alias aliquam, natus neque reiciendis?"/>
+            <div className="h-auto w-full flex flex-row items-center justify-center flex-wrap">
+                <ProfileCard name="Meow" image={Cat1} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut modi, autem iste minima recusandae tenetur expedita dolorum. "/>
+                <ProfileCard name="Kitkat" image={Cat2} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut modi, autem iste minima recusandae tenetur expedita dolorum. "/>
+                <ProfileCard name="Mallows" image={Cat3} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut modi, autem iste minima recusandae tenetur expedita dolorum."/>
+                <ProfileCard name="Peanut" image={Cat4} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut modi, autem iste minima recusandae tenetur expedita dolorum."/>
             </div>
         </div>
     )
