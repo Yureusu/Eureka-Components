@@ -9,6 +9,7 @@ import Cat1 from "../assets/img/Cat1.jpg"
 import Cat2 from "../assets/img/Cat2.jpg"
 import Cat3 from "../assets/img/Cat3.jpg"
 import Cat4 from "../assets/img/Cat4.jpg"
+import UserForm from "../components/UserForm";
 
 function Landing() {
 
@@ -22,6 +23,9 @@ function Landing() {
             <Header isDark={isDark} setIsDark={setIsDark}/>
             <Search isDark={isDark}/> 
             <Dropdown isDark={isDark} items={cats} label={"Meow"} />
+            <UserForm isDark={false} elements={[
+                
+            ]}/>
             <Showcase isDark={isDark} 
                 image1={{src: Cat1, width: "240px", height: "240px"}}
                 description1={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis veritatis nihil sint quibusdam blanditiis, beatae accusamus nisi obcaecati, eum quae maxime aspernatur eius similique iste officia fugit explicabo? Minus, facilis."}

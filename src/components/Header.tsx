@@ -34,7 +34,7 @@ function Header({isDark, setIsDark}: changeTheme) {
                         flex flex-row items-center justify-center cursor-pointer text-[var(--placeholder-color)] hover:text-[var(--text-color)]`}>
                         <p>Contact</p>
                     </div>
-                ]} isDark={false}/>
+                ]} />
             </div>
         </div>
     )
